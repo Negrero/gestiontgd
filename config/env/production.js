@@ -11,7 +11,6 @@ module.exports = {
 				'public/lib/angular-material/angular-material.css',
 			],
 			js: [
-
 				'public/lib/angular/angular.min.js',
 				'public/lib/angular-resource/angular-resource.js', 
 				'public/lib/angular-cookies/angular-cookies.js', 
@@ -23,8 +22,6 @@ module.exports = {
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.min.js',
 				'public/lib/angular-file-upload/angular-file-upload.js',
 				'public/lib/jquery/dist/jquery.js',
-				'public/lib/angular-ui-tab-scroll/angular-ui-tab-scroll.js',
-				'public/lib/angular-bootstrap-scrolling-tabs/scrolling-tabs.js',
 				'public/lib/json-formatter/dist/json-formatter.js',
 				'public/lib/angular-aria/angular-aria.js',
 				'public/lib/angular-material/angular-material.js',

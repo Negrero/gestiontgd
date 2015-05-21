@@ -12,8 +12,6 @@ var ApplicationConfiguration = (function() {
 		// Dependencias de terceros usadas por mi
 		'angularFileUpload','jsonFormatter',
 		'ngAria','ngMaterial'
-
-
 	];
 
 	// Add a new vertical module
