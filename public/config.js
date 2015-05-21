@@ -10,7 +10,7 @@ var ApplicationConfiguration = (function() {
 		// Dependencias de ui
 		'ui.router', 'ui.bootstrap', 'ui.utils',
 		// Dependencias de terceros usadas por mi
-		'angularFileUpload','ui.tab.scroll', 'mj.scrollingTabs','jsonFormatter',
+		'angularFileUpload','jsonFormatter',
 		'ngAria','ngMaterial'
 
 
