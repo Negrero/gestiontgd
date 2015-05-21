@@ -6,11 +6,11 @@
 				<!-- Example: nv-file-select="" uploader="{Object}" options="{Object}" filters="{String}" -->
 				<div flex>
 					<label for="multiple">Multiple</label>
-					<input id="multiple" type="file" nv-file-select="onFileSelect($files)" uploader="uploader" multiple  /><br/>
+					<input id="multiple" type="file" nv-file-select="onFileSelect($files)" uploader="uploader" multiple ng-max-size="30" /><br/>
 				</div>
 				<div flex>
 					<label for="single">Single</label>
-					<input id="single" type="file" nv-file-select="" uploader="uploader" />
+					<input id="single" type="file" nv-file-select="" uploader="uploader" ng-max-size="30"/>
 				</div>
 			</div>
 

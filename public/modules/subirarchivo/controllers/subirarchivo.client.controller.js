@@ -62,6 +62,10 @@ angular.module('subirarchivo')
 				return this.queue.length < 10;
 			}
 		});
+		uploader.filters.push({ name: 'size',
+			fn: function(item) {
+			return item.size < 500000;
+		}});
 
 		// CALLBACKS
 
