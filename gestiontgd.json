@@ -1,0 +1,11 @@
+[{
+  "script"           : "server.js",
+  "name"             : "gestiontgd",
+  "exec_mode"        : "fork",
+  "watch"            : true, 
+  "merge_logs"       : true,
+  "env": {
+    "NODE_ENV": "production"
+  }
+}]
+

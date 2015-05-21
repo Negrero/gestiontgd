@@ -1,0 +1,12 @@
+<section data-ng-controller="DashboardsController" data-ng-init="find()" >
+	<div layout="row"layout-margin layout-fill layout-padding layout-align="center center" class="md-whiteframe-z4">
+			<div layout="column" layout-align="center center" style="height: 100px;">
+				<md-select ng-model="user" md-on-open="loadUsers()" style="min-width: 200px;">
+					<md-select-label>{{ user ? user.name : 'Assign to user' }}</md-select-label>
+					<md-option ng-value="user" ng-repeat="user in users">{{user.name}}</md-option>
+				</md-select>
+				<p class="md-caption">You have assigned the task to: {{ user ? user.name : 'No one yet' }}</p>
+
+		</div>
+	</div>
+</section>

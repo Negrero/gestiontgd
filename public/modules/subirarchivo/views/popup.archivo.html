@@ -1,0 +1,46 @@
+
+<div class="modal-header">
+    <h3 class="modal-title">Bloques de informacion del fichero:</h3>
+    <strong>{{nameFile}}</strong>
+    <p>Numero de bloques leidos: {{tabs.length}}</p>
+
+
+</div>
+<div class="modal-body">
+    {{tgd.EF_ICC.cardPersonaliserID}}
+<!--
+     <tabset>
+
+
+            <tab ng-repeat="tab in tabs" active="tab.active" disabled="tab.disabled" heading="test">
+              <tab-heading>{{tab.tittle}}</tab-heading>
+                {{tab.content}}
+             </tab>
+
+     </tabset>
+-->
+<!--
+    <accordion>
+        <accordion-group heading="{{name_block}}" ng-repeat="name_block in name_blocks">
+            <json-formatter json="lista_blocks[name_block]" open="2"></json-formatter>
+        </accordion-group>
+    </accordion>
+-->
+
+        <md-content class="md-padding">
+            <md-tabs md-selected="selectedIndex" md-border-bottom>
+                <md-tab ng-repeat="tab in tabs" label="{{tab}}">
+                    <json-formatter json="lista_blocks[tab]" open="2"></json-formatter>
+                </md-tab>
+            </md-tabs>
+        </md-content>
+
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>
+
+
+
+
+

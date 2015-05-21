@@ -1,0 +1,31 @@
+<section data-ng-controller="DahsboardsController" data-ng-init="find()" >
+	<div layout="column">
+		<div flex class="md-whiteframe-z4" layout-margin>
+			<md-subheader class="md-title">Ficheros</md-subheader>
+			<md-content style="height: auto">
+				<md-list>
+					<md-list-item ng-repeat="item in dashboards">
+						<a data-ng-href="#!/dashboards/{{dashboard._id}}">
+							<p data-ng-bind="item.nameFile" style="font-size:0.6em"></p>
+						</a>
+						<md-divider></md-divider>
+					</md-list-item>
+				</md-list>
+			</md-content>
+		</div>
+		<div flex class="md-whiteframe-z4">
+			<md-content>
+				<md-list>
+					<md-subheader class="md-no-sticky">Ficheros</md-subheader>
+					<md-list-item ng-repeat="item in dashboards">
+						<div class="md-list-item-inner">
+							<a data-ng-href="#!/dashboards/{{dashboard._id}}">
+								<span data-ng-bind="item.nameFile" style="font-size:0.8em"></span>
+							</a>
+						</div>
+					</md-list-item>
+				</md-list>
+			</md-content>
+		</div>
+	</div>
+</section>
