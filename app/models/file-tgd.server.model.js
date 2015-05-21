@@ -2,12 +2,14 @@
 
 /**
  * Module dependencies.
+ * modelo de para el dashboard
  */
 var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
 /**
- * FileTgd Schema
+ * FileTgd Schema de los datos del tacografo nombre de fichero y los 16 bloque que puede contener el
+ * fichero
  */
 var FileTgdSchema = new Schema({
 	nameFile: {

@@ -3,9 +3,9 @@
 module.exports = {
 	db:'mongodb://andres:andres@server.valdepeace.com:27017/tgd',
 	app: {
-		title: 'simple',
-		description: 'Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js',
-		keywords: 'MongoDB, Express, AngularJS, Node.js'
+		title: 'Gestion tgd',
+		description: 'Gestion de los datos del tacografo',
+		keywords: 'MongoDB, Express, AngularJS, Node.js, tgd, tacografo, esm '
 	},
 
 	port: process.env.PORT || 3000,

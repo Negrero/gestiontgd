@@ -2,6 +2,7 @@
 
 /**
  * Module dependencies.
+ * Para la gestion de los archivos interpretados de un usuario registrado
  */
 
 var mongoose = require('mongoose'),
@@ -10,7 +11,9 @@ var mongoose = require('mongoose'),
 	_ = require('lodash');
 
 /**
- * Create a Dashboard
+ * Nos graba en base de datos el archivo interpretado
+ * @param req
+ * @param res
  */
 exports.create = function(req, res) {
 	var dashboard = new Dashboard(req.body);
@@ -28,7 +31,9 @@ exports.create = function(req, res) {
 };
 
 /**
- * Show the current Dashboard
+ * Nos devuelve los datos de un archivo
+ * @param req
+ * @param res
  */
 exports.read = function(req, res) {
 	res.jsonp(req.dashboard);
@@ -54,7 +59,9 @@ exports.update = function(req, res) {
 };
 
 /**
- * Delete an Dashboard
+ * Borra un archivo de la base de datos
+ * @param req
+ * @param res
  */
 exports.delete = function(req, res) {
 	var dashboard = req.dashboard ;
@@ -71,7 +78,9 @@ exports.delete = function(req, res) {
 };
 
 /**
- * List of Dashboards
+ * Lista los archivos interpretados
+ * @param req
+ * @param res
  */
 exports.list = function(req, res) { 
 	Dashboard.find().sort('-created').populate('user', 'displayName').exec(function(err, dashboards) {
@@ -86,7 +95,11 @@ exports.list = function(req, res) {
 };
 
 /**
- * Dashboard middleware
+ * * Buscar un archivo en concreto
+ * @param req
+ * @param res
+ * @param next
+ * @param id
  */
 exports.dashboardByID = function(req, res, next, id) {
 	Dashboard.findById(id).populate('user', 'displayName').exec(function(err, dashboard) {

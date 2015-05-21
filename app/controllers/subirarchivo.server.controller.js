@@ -2,6 +2,7 @@
 
 /**
  * Module dependencies.
+ * Para la interpretacion de los archivos del tacografo
  */
 var mongoose = require('mongoose'),
     errorHandler = require('./errors.server.controller'),
