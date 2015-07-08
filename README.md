@@ -2,10 +2,7 @@
 
 Realizado con el scaffolding meanjs y FULLSTACK en el que se realiza la gestion de archivos del tacógrafo para su interpretacion y grabado en base de datos:
 
-BASE DE DATOS  	       	API REST                FRONTEND
-                ------>   nodejs      ------->
-Mongodb                     +                   angularjs   
-                ------>   express     ------->
+BASE DE DATOS (mongodb)<------> API REST(nodejs+express)<------>FRONTEND (angularjs)
 							
 Dicha aplicacion se comunica con el servicio que esta ha la escucha:
 
